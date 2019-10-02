@@ -20,3 +20,6 @@ RUN cd /home/gitpod && wget -O flutter_sdk.tar.xz https://storage.googleapis.com
     && tar -xvf flutter_sdk.tar.xz && rm flutter_sdk.tar.xz;
     
 USER root
+
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+RUN dpkg -i google-chrome-stable_current_amd64.deb
