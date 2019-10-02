@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 
 ENV FLUTTER_HOME=/home/gitpod/flutter \
     PATH=/usr/lib/dart/bin:$FLUTTER_HOME/bin:$PATH
@@ -14,12 +14,5 @@ RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - &
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
 
-USER gitpod
-
-RUN cd /home/gitpod && wget -O flutter_sdk.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.0.0-stable.tar.xz \
+RUN wget -O flutter_sdk.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.0.0-stable.tar.xz \
     && tar -xvf flutter_sdk.tar.xz && rm flutter_sdk.tar.xz;
-    
-USER root
-
-# RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
-# RUN sudo dpkg -i google-chrome-stable_current_amd64.deb
