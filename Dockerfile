@@ -1,3 +1,5 @@
+FROM antoniopicone/ubuntu_develop
+
 WORKDIR /tmp
 
 # Setting up development user
