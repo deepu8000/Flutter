@@ -23,6 +23,7 @@ RUN echo 'alias livecode="flutter packages pub global run webdev serve --hostnam
 # Execute minimum actions for flutter development
 RUN flutter precache && flutter config --no-analytics && flutter upgrade
 
+USER root
 # FROM nathansamson/flutter-builder-docker
 # FROM antoniopicone/flutter_web
 
