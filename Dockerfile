@@ -28,7 +28,7 @@ ENV PATH="$PATH:${FLUTTER_PATH}:${PUB_CACHE_BIN}:${DART_PATH}"
 RUN echo 'alias livecode="flutter packages pub global run webdev serve --hostname 0.0.0.0 --auto restart"' >> ~/.bashrc
 
 # Execute minimum actions for flutter development
-RUN flutter precache && flutter config --no-analytics && flutter upgrade
+RUN flutter precache && flutter config --no-analytics && flutter upgrade && flutter channel master && flutter upgrade && flutter config --enable-web
 
 USER root
 
