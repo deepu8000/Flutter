@@ -1,2 +1,6 @@
 image:
   file: Dockerfile
+
+vscode:
+  extensions:
+    - Dart-Code.flutter@3.5.1:0FyuzXye7dV19PNst3+Llg==
