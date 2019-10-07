@@ -1,4 +1,5 @@
-FROM nathansamson/flutter-builder-docker
+# FROM nathansamson/flutter-builder-docker
+FROM antoniopicone/flutter_web
 
 # ENV FLUTTER_HOME=/home/gitpod/flutter \
 #    PATH=/usr/lib/dart/bin:$FLUTTER_HOME/bin:$PATH
