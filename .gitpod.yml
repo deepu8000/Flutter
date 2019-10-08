@@ -5,3 +5,6 @@ vscode:
   extensions:
     - Dart-Code.flutter@3.5.1:0FyuzXye7dV19PNst3+Llg==
     - Dart-Code.dart-code@3.5.1:W6zqgIED1gxtkBH/pbfGXA==
+    - Nash.awesome-flutter-snippets@2.0.2:t46T1dDQ2wuT3080oCm5ng==
+    - yt1997kt.flutter-bloc@0.1.1:izIXSdnJEEfQKDnR+1zEXQ==
+    - gornivv.vscode-flutter-files@1.5.2:1DOsnm4dXIUD2kqxAdIUPA==
