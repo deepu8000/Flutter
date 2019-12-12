@@ -12,7 +12,7 @@ WORKDIR /tmp
 # Setting up development user
 ARG USERNAME=gitpod
 
-RUN wget -O /tmp/flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz
+RUN wget -O /tmp/flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.12.13+hotfix.5-stable.tar.xz
 
 RUN tar xf /tmp/flutter.tar.xz && \
     rm -rf /tmp/flutter.tar.xz && \
